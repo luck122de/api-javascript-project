@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <p>can you stop me when I reach at 5?</p>
+            <br>
+            <button id="btn">click here</button>
+            <button id="btn2">stop here</button>
+        </div>
+    </div>
+
+    <script>
+         const num1=document.querySelector('p');
+         const btn=document.querySelector('#btn');
+         const btn2=document.querySelector('#btn2');
+         let num=0;
+         let timeref;
+
+         const shownum=()=>{
+            num1.innerHTML="loading..."
+
+       timeref= setInterval(()=>{
+            num1.innerHTML=`${num}`;
+            num++;
+        },1000)
+         }
+       
+         btn.addEventListener('click',shownum)
+
+         btn2.addEventListener('click',()=>{
+           clearInterval(timeref);
+         });
+
+    </script>
+</body>
+</html>

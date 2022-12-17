@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: cornflowerblue;
+        }
+        p{
+            width: auto;
+            font-size: larger;
+            font-weight: 200;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        } 
+         #btn{
+            width: 176px;
+            margin: auto;
+            background-color: bisque;        
+          text-align: center;
+            padding: 20px;
+            color: black;
+            font-size: large;
+            font-weight: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <p>want to know my name ?</p>
+            <p id="showMyname"></p>
+            <br>
+            <button id="btn">Click here</button>
+        </div>
+    </div>
+
+    <script>
+        const showMyName=document.querySelector('#showMyname');
+
+        const btn=document.querySelector('#btn');
+
+    const Myname=()=>{
+        showMyName.innerHTML="Loading..."
+        setTimeout(()=>{
+            showMyname.innerHTML= "Ankit Rai"
+        },1000)
+    }
+
+btn.addEventListener('click',Myname);
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            background-color: cadetblue;
+            text-align: center;
+            padding: 30px;
+        }
+        /* #icecreams{
+            width: 176px;
+            padding: 0px;
+            margin-top: 30px;
+            background-color: rgb(171, 187, 187);
+            border-radius: 3px;
+            box-shadow: 30px;
+        } */
+        /* .button_container{
+            width: 176px;
+             margin: auto;
+             margin-top: 30px;
+             padding: 30px ;
+             
+        } 
+        .button_su{
+            overflow: hidden;
+             position: relative;
+            display: inline-block;
+            border-radius: 3px;
+            margin-bottom: 30px;
+            box-shadow:0px 10px 8px -8px rgb(0, 0,0,0.6);  
+ }
+  .su_button_circle{
+    background-color: red;
+    border-radius: 1000px;
+    position:absolute;
+    left:0;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    pointer-events:none;
+
+ }
+ .button_su_inner{
+    display:inline-block;
+    background:#F8B627;
+    color: #F4F4F4;
+    font-size:16px;
+    font-weight:normal;
+    width:132px;
+    text-align:center;
+    border-radius:3px;
+    transition:400ms;
+    text-decoration:none;
+    padding:22px;
+    z-index:100000;
+ }
+ .button_text_container{
+    position:relative;
+    z-index:10000;
+ }  */
+
+
+ #button{
+    width:176px;
+    margin: auto;
+    text-align: center;
+    padding:30px;
+    
+   
+ }
+ #button1{
+    display:inline-block;
+    background:#F8B627;
+    color: #F4F4F4;
+    font-size:20px;
+    font-weight:normal;
+    width:130px;
+    text-align:center;
+    border-radius:3px;
+    transition:400ms;
+    text-decoration:none;
+    padding:10px;
+    z-index:100000;
+ }
+#button2{
+      width:130px;
+     display:inline-block; 
+    background:#F8B627;
+    color: #F4F4F4;
+    font-size:20px;
+    font-weight:normal;
+    text-align:center;
+    /* border-radius:3px; */
+    /* transition:400ms; */
+    text-decoration:none;
+    padding:10px;
+    z-index:100000;
+    margin: 10PX;
+}
+ </style>
+</head>
+<body>
+    <!-- <div class="content"><h1>Different events types In javascript</h1></div>
+<div class="button_container">
+    <div class="button_su">
+        <span class="su_button_circle"></span>
+        <a href="#" class="button_su_inner" onclick="alert('can not use')">
+            <span class="button_text_container">simple Inline alert()</span>
+        </a>
+    </div> 
+    <div class="button_su">
+        <span class="su_button_circle"></span>
+        <a href="#" class="button_su_inner" onclick="callingfunction()">
+            <span class="button_text_container">BY calling a function()</span>
+        </a>
+    </div> 
+    <div class="button_su">
+        <span class="su_button_circle"></span>
+        <a href="#" class="button_su_inner">
+            <span class="button_text_container" id="tirdWay">simple Inline event</span>
+        </a>
+    </div> 
+    <div class="button_su">
+        <span class="su_button_circle"></span>
+        <a href="#" class="button_su_inner">
+            <span class="button_text_container" id="fourthWay">Event Listeners</span>
+        </a>
+    </div> 
+    </div> -->
+
+    <!-- <script>
+
+
+/************2nd way***/
+        const callingfunction=()=>{
+            alert('most common function');
+        }
+
+
+
+
+        /****3rd way**/
+        const thirdWay=document.getElementById("tirdWay");
+        thirdWay.onclick=function(){
+           alert('3rd most function agin');
+        }
+        thirdWay.onclick=function(){
+           console.log('2nd most function agin');
+        }
+        
+
+
+        
+               /***fourth way**/
+        const fourthWay=document.querySelector('#fourthWay');
+
+        fourthWay.addEventListener('click',()=>{
+          alert('I love this way of writing function')  
+        })
+
+        fourthWay.addEventListener('click',()=>{
+            console.log('I love this way of writing function')  
+        })
+
+        /**diference between 3rd way and 4th way is that in 3rd way if same  two event occur then last event overwritten privious event.          where in addeventlistener i.e 4th way can occur multiple same event**/
+
+    </script> -->
+
+
+
+   <!-- <script>
+    const fourthWay=document.getElementById('fourthWay');
+    const checkEvent=()=>{
+        alert('hum dekh rahe hai');
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+    }
+    fourthWay.addEventListener('click',checkEvent);
+
+ </script> -->
+
+
+
+    
+   <!-- <p id="myP" onmousedown="mousedown()" onmouseup="mouseup()">
+    Click the text! The mouseDoen() function is triggred when the mouse button press doen over this paragraph, and sets the c olor of the text to red.The mouseup() function is triggered when the mouse button is release and sets the color of the text to green. </p>
+    <script>
+        function mousedown(){
+         document.getElementById("myP").style.color="#F8B627";
+        }
+        function mouseup(){
+            document.getElementById('myP').style.color='red';
+        }
+    </script> -->
+
+
+<!-- <div class="main-div"><div id="box"></div>
+
+</div> -->
+
+<!-- 
+
+
+<div>
+    <p>A function is triggered when the user is oressing a key in the input field.</p>
+    <br>
+    <input type="text" class="effect" onkeypress="keypress()" onkeydown="keydown()" onkeyup="keyup()">
+</br>
+<p id="keys"></p>
+</div> -->
+
+
+
+
+
+<!-- <script>
+    const mEnter=document.getElementById('box');
+
+    mEnter.addEventListener('mousenter',()=>{
+        mEnter.style.backgroundColor='red';
+        console.log('Mouse Enter Bro');
+
+        mEnter.addEventListener('mouseleave',()=>{
+            console.log('Mouse leave bro');
+            mEnter.style.backgroundColor='pink';
+        })
+    })
+</script> -->
+
+
+
+
+
+
+<!-- <script>
+    // // const keypress=()=>{
+    // //     document.getElementById('keys').innerHTML=`you press ${event.key} and it's code is ${event.code}`;
+    // }
+
+    // const keydown=()=>{
+    //     document.getElementById('keys').innerHTML=`key is down`;
+    // }
+
+    //     const keyup=()=>{
+    //     document.getElementById('keys').innerHTML=`key is up`;
+    //     }
+    
+</script> -->
+
+
+
+
+
+
+<!-- <div class="main-div">
+    <div>
+        <label for="">your name </label>
+        <input type="text" name="" id="ice">
+        <br>
+        <label>choose an ice cream flavor
+        
+            <select id="icecreams" name="icecream" onchange="selectElement()"> -->
+            <!-- <select id="icecreams" name="icecream">
+        <option value="">Select one</option>
+        <option value="choclate">chocolate</option>
+        <option value="sardine">Sardine</option>
+        <option value="vanilla">Vanilla</option>
+    </select>
+        </label>
+        <br>
+          <div id="result"></div>      
+    </div>
+</div> --> 
+
+
+
+<!-- <script>
+    // const selectElement=()=>{
+      
+    //     const inputChange=document.getElementById('ice').value;
+    //     const iceCream=document.getElementById('icecreams').value;
+    //     const result=document.getElementById('result');
+    //     console.log(`${inputChange} and ${ice}`);
+    //     result.innerHTML=`Mr ${inputChange} select ${iceCream} ice-cream `;
+
+
+   // }
+        const iceCreams=document.getElementById('icecreams');
+
+        iceCreams.addEventListener('change',()=>{
+            const inputChange=document.getElementById('ice').value;
+        const iceCream=document.getElementById('icecreams').value;
+        const result=document.getElementById('result');
+        
+        result.innerHTML=`Mr ${inputChange} select ${iceCream} ice-cream `;
+
+        })
+    
+    </script> -->
+
+
+
+
+
+<!-- <p>Different Between inline Event and Event Listener</p>
+
+<div id="button">
+    <div id="button1">
+        Inline event
+    </div>
+    <div id="button2">
+        Event Listener
+    </div>
+</div>
+
+<script>
+const thirdway=document.getElementById('button1');
+thirdway.onclick=()=>{
+    alert('I am again calling using onclick');
+}
+
+thirdway.onclick=function(){
+    alert('I am again calling 222')
+}
+
+const fourthway=document.getElementById('button2');
+
+fourthway.addEventListener('click',()=>{
+    alert('hi')
+})
+
+fourthway.addEventListener("click",()=>{
+alert('bye')
+})
+
+
+</script> -->
+
+
+
+</body>
+</html>

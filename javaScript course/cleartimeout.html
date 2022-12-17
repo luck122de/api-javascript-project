@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color:cornsilk ;
+            padding:10px
+        }
+        button{
+            width: 176px;
+            margin: auto;
+            padding: 20px;
+            text-emphasis-color: red;
+            font-size: large;
+            font-weight: 200;
+            font-style: normal;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-dv">
+        <div>
+            <p>Click"try it".wait 3 seconds.The page will alert "hello".</p>
+            <p>click "stop" to prevent the first function to execute.</p>
+            <p>(you must click "stop" before the 2 seconds are up.)</p>
+
+            <button onclick="myvar=setTimeout(myfunction, 2000)">try it</button>
+
+            <button onclick="clearTimeout(myvar)">stop it</button>
+        </div>
+    </div>
+    <script>
+     function myfunction(){
+        alert("Hello");
+     }
+    </script>
+</body>
+</html>
