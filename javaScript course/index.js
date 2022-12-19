@@ -1936,3 +1936,41 @@
 //   },1000)
 //  },1000)   
 
+
+                //JSON
+
+// // it formate same as object the only difference is that it use ""(double inverted comma) for both side i.e "name of var":"value"
+
+
+// // // JSON.stringify turns a javascript object into JSON text and stores that JASON text in a string, eg:
+
+// var my_object={key_1:"some text", key2:true, key3: 5};
+
+// var object_as_string=JSON.stringify(my_object);
+// //"{"key_1":"some text","key2":"true","key3":"5"}"
+
+// typeof(object_as_string)
+// //"string"
+
+// //// JSON.parse turns a string of JSON text into a javascript object, eg:
+
+// var object_as_string_as_object=JSON.parse(object_as_string);
+
+// typeof(object_as_string_as_object);//"object"
+
+//JASON is standard formate which help to communicate between one server to other server.
+
+
+                /***PROMISES */
+      
+ //90% promise consumed na ki create
+ 
+ //fetch("link")---->either fullfilled or reject elese ongoing.
+
+ //it help from callback hell.
+
+ //async it better than promises.
+
+ //PROMISES
+ //GET https://icanhazdadjoke.com/ further are in dadjokes project.
+
