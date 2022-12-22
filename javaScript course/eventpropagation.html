@@ -43,18 +43,18 @@ const callparentevent=()=>{
 }
 const callchildevent=()=>{
    alert('child div call');
-//    event.stopPropagation();
+  // event.stopPropagation();
 }
 
 
-// parent.addEventListener('click',callparentevent);
+parent.addEventListener('click',callparentevent);
 
-// child.addEventListener('click',callchildevent);//by deafult it is bubbling propagation and third argumentby deafult false.
+child.addEventListener('click',callchildevent);//by deafult it is bubbling propagation and third argumentby deafult false.
 
 
-parent.addEventListener('click',callparentevent,true);
+// parent.addEventListener('click',callparentevent,true);
 
-child.addEventListener('click',callchildevent,true);//if we pass true then it follow capturing propagation
+// child.addEventListener('click',callchildevent,true);//if we pass true then it follow capturing propagation
 
 
     </script>

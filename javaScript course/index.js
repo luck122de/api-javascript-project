@@ -984,7 +984,7 @@
 // console.log(str.charCodeAt(lastchar-1));
  
 
-                     /**Property Access */
+                       /**Property Access */
 //ECMAScript 5(2009) allows property access[ ] on string
 
 // var str="HELLO WORLD";
@@ -998,8 +998,8 @@
 // console.log(myname.toLowerCase());
 
 
-                           /**concat() method */
-//concat() joins two ot more string
+                                            /**concat() method */
+//concat() joins two or more string
 // let fName="ankit"
 // let lName="rai"
 // console.log(`${fName} ${lName}`);
@@ -1007,7 +1007,7 @@
 // console.log(fName.concat(lName));
 // console.log(fName.concat(" ",lName));
 
-                          /*****trim() mthd */
+                                         /*****trim() mthd */
 
 //The trim() method removes whitespace from both sides of a string kdep in mind it does not remove spaces between the strings.
 // var str="              Hello World!        ";
@@ -1028,8 +1028,9 @@
 /********************************************************************** */
 
 
-                /***SECTION 8 */
-                          /**DATE AND TIME IN JAVASCRIPT */
+                           /***SECTION 8 */
+                          /****DATE AND TIME IN JAVASCRIPT***/
+
 //javaScript data objects represent a single moment in time in a platform-independent format.Date objects contain number tha represents millisecond since 1 january 1970 UTC.
 
 
@@ -1040,7 +1041,7 @@
 // new Date(year, month, day, hours, minutes, second, milliseconds);
 // // it takes 7 arguments or less than 7
 // new Data(milliseconds);
-// //we cannot avoid month swction
+// //we cannot avoid month section
 // new Date(date string);
 
 
@@ -1193,7 +1194,7 @@
 
 
 
-                      /****PRACTICE TIME */
+                      /****PRACTICE TIME*****/
 
                     
 //if the argument is a positive number, Math.trunc() is equaivalent to Math.floor(),
@@ -1238,7 +1239,7 @@
 // }
 
 
-                        /**DOM Navigation */
+                                    /**DOM Navigation */
 
 //root element of document is <HTML>.
 //1: document.documentElement
@@ -1264,7 +1265,7 @@
 //8:document.body.firstElementChild// it will not include space and text direct give actual data
 
 
-              //PRACTICE TIME
+                                                   //PRACTICE TIME
 //Q...How to check whether an element has child nodes or not?
 
 //Ans...> //Ans...>document.body.hasChildNodes() 
@@ -1326,7 +1327,7 @@
 
                     
 
-           /*******************************EVENTS IN JAVASCRIPT */
+            /*******************************EVENTS IN JAVASCRIPT********************* */
 
 
 //HTML events are "things" that happen to HTML elements.
@@ -1346,7 +1347,8 @@
 
 //HTML allows event handler attributes,with javascript code, to be added to HTML
 
-             /**Section 4 ways of writing Events in javascript */
+
+                                      /**Section 4 ways of writing Events in javascript */
   
 
 //1: using inline events alert();
@@ -1361,20 +1363,20 @@
 //when a function call in a another function as a argument called callbackfunction.or function call as argument in method.
 
 
-                 /**what is event object */
+                                         /**what is event object */
 
 //Event object is the parent object of the event object.
 //for Example:-MouseEvent, focusEvent, keyboardEvent etc.
 
 
-                 /**MOUSEEVENT IN JAVASCRIPT */
+                                          /**MOUSEEVENT IN JAVASCRIPT */
 
 //The MouseEvent Object Events that occur when the mouse interacts with the HTMLdocument belong to the MouseEvent Object.
 //1>mousedown
 //2.mouseup
 //3.mouseenter
 //4.mouseleave
-                  /**KEYBOARDEVENT IN JAVASCRIPT */
+                                    /**KEYBOARDEVENT IN JAVASCRIPT */
 //Events that occur when user pressure a key on the keyboard,belongs to the keyboardEvent Object.
 //1>onkeypress
 //2>onkeydown
@@ -1382,7 +1384,7 @@
 
 
 
-                 /**InputEvents in javascript */ 
+                                /**InputEvents in javascript */ 
                
 //The onchange event occur when the value of an element has been changed.
 
@@ -1393,7 +1395,7 @@
 
 
 
-                     /**INTERVIEW QUESTION */
+                                           /**INTERVIEW QUESTION */
 
 //Q.> difference between onclick and addEventListener
 
@@ -1412,7 +1414,7 @@
 
 
  
-               /***TIME BASED EVENTS IN JS */
+                                       /***TIME BASED EVENTS IN JS */
   
 //The window object allows execution of code at specified time intervals.
 
@@ -1432,12 +1434,12 @@
 //4>  clearInterval()
 
 
-                     /***INTERVIEW QUESTION**/
+                                     /***INTERVIEW QUESTION**/
 //Q.> Diffrence between setTimeout and setIntervsl()?
 
 
           
-                      /**OOPS IN JAVASCRIPT*/
+                                        /**OOPS IN JAVASCRIPT*/
 
 //1 what is Object Literal?
 //object literal is simply a key:value pair data structure.
@@ -1518,7 +1520,7 @@
 //  this object will not work with arrow function
 
 
-                    /**INTERVIEW QUESTION */
+                                                  /**INTERVIEW QUESTION */
 
 //what will be output of
 // const obj={
@@ -1548,7 +1550,7 @@
   
 
 
-                   /**Destructuring in ES6 */
+                                     /**Destructuring in ES6 */
 
 //The destructuring assingement syntax is a javaScript that makes it possible to unpack values from arrays, or properties from onjects, intomdistinct variables.
 
@@ -1619,12 +1621,12 @@
 
 
 
-                   //Spread Operator
+                                     //Spread Operator
 
 // const colors=['red','green','blue','white'];
 
-// // const mycolors=['red','green','blue','white','yellow','black'];
-// //2nd time add one more color on the top and tell we need to write it again on mycolor array too
+// // // const mycolors=['red','green','blue','white','yellow','black'];
+// // //2nd time add one more color on the top and tell we need to write it again on mycolor array too
 
 // const MyFavColors=[...colors,'yellow','black'];
 
@@ -1681,7 +1683,7 @@
 // const person = {name:'ankit',age:87};
         
 // const entrie=Object.entries(person);
-// // console.log(entrie);
+//  console.log(entrie);
 
 // console.log(Object.fromEntries(entrie));//it reverse Object.entries.
 
@@ -1720,7 +1722,8 @@
 
 
 
-     /*****************************************************************ADVANCED JAVASCRIPT**************************************/ 
+                  /*****************************************************************ADVANCED 
+                   *    JAVASCRIPT**************************************/ 
 
 
      
@@ -1749,12 +1752,12 @@
 // //wo function jo dusre function ko as an argument accept krta hai use HOF.
 
 
-                      /***CALLBACK FUNCTION */
+                                      /***CALLBACK FUNCTION */
 
 //function which get passed as an argument to another function is called CBF.
 // // a callback function is function which passed as argument to another function, to be "called back"at a later time.
 
-//                /*****MAKE A CALCULATOR  */
+//                                 /*****MAKE A CALCULATOR  */
 
 //  const add=(a,b)=>{
 //   return a+b;
@@ -1780,7 +1783,7 @@
           /*************************ASYNCHRONOUS JAVASCRIPT */
 
   
-             //HOISTING IN JAVASCRIPT
+                                    //HOISTING IN JAVASCRIPT
              
 //1.>we have a certain phase and execution phase
 
@@ -1798,7 +1801,7 @@
 //so hoisting is not use after esc2015.
 
 
-          /***SCOPE CHAIN AND LAXICAL SCOPING */
+                            /***SCOPE CHAIN AND LAXICAL SCOPING */
 
 // // The scope chain is used to resolve the value of variable names in js.
 
@@ -1823,7 +1826,7 @@
 // }
 
   
-               /**CLOSURES IN JAVASCRIPT */
+                                   /**CLOSURES IN JAVASCRIPT */
 
 //A closure is the combination of a function bundle together (enclosed) with references to its surrounding state (the lexical environment).
 
@@ -1834,14 +1837,14 @@
 
 
 
-//// For exsample
+//// For example
 // const outerFun=(a)=>{
 //   let b=10;
 //   const innerFun=()=>{
 //     let sum=a+b;
 //     console.log(`the sum of the two number is ${sum}`);
 //   }
-//   return innerFun;
+//   //return innerFun;
 // }
 // let checkclosure=outerFun(5);
 // console.dir(checkclosure);
@@ -1853,20 +1856,20 @@
 
 
 
-              /***DIFFERENCES BETWEEN SYNCHRONOUS AND ASYNCHRONOUS JAVASCRIPTS */
+      /**********************DIFFERENCES BETWEEN SYNCHRONOUS AND ASYNCHRONOUS JAVASCRIPTS ************/
 
 //// 6:Synchronous javascript prog
 
 // const fun2=()=>{
-//   console.log(`Function 2 is called`);
-// }
-//  const fun1=()=>{
-//   console.log(`Function 1 is called`);
-//   fun2();
-//   console.loog(`Function 1 is called again`);
-//  }
+// //   console.log(`Function 2 is called`);
+// // }
+// //  const fun1=()=>{
+// //   console.log(`Function 1 is called`);
+// //   fun2();
+// //   console.log(`Function 1 is called again`);
+// //  }
 
-//  fun1();
+// //  fun1();
 
 ////7: Asynchronous javascript 
 
@@ -1889,9 +1892,11 @@
 
            
 
-           /************************************EVENT LOOP IN JAVASCRIPT */
+           /************************************EVENT LOOP IN JAVASCRIPT******************** */
 
-//global execution---->>execution stack----->webApi---->queu message
+
+           
+// global execution---->>execution stack----->webApi---->queu message
 
 
 
@@ -1919,7 +1924,7 @@
 //     sum(5)(3)(8);
 
 
-           /**************CALLBACK HELL */
+                                   /**************CALLBACK HELL ***************/
 
 //  setTimeout(()=>{
 //    console.log(`1 work is done`);
@@ -1937,7 +1942,7 @@
 //  },1000)   
 
 
-                //JSON
+                                                 //JSON
 
 // // it formate same as object the only difference is that it use ""(double inverted comma) for both side i.e "name of var":"value"
 
@@ -1961,7 +1966,7 @@
 //JASON is standard formate which help to communicate between one server to other server.
 
 
-                /***PROMISES */
+                                             /***PROMISES */
       
  //90% promise consumed na ki create
  
