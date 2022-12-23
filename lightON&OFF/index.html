@@ -12,32 +12,50 @@
             padding: 0; 
         }
         #para{
-            width: 600px;
+            width: 300px;
             height: 100px;
             margin:auto;
             font-size: xx-large;
             padding-top:  40px;
         }
+        
         .box{
-          width:600px;
-          height:100px;
-          display: block;
-          margin: auto;
-          padding: 30px;
-          }
-          #button1{
+          width:1000px;
+           height:400px;  
+          /* padding: 30px; */
+          background-color: bisque;
+          /* display: inline-block; */
+          margin-left: 350px;
+           } 
+           #bu1{
+            width:150px;
+            height : 300px;
             float: left;
+        }
+          #button1{
             font-size: large;
             border: 2px solid black;
           }
           #bulb{
-            padding-left: 20px;
-            /* padding-right: 50px; */
-            padding-left: 170px;
+            width:250px;
+            margin-left:auto ;
+            margin-right: auto;
+           height: 200px;
+           display: block;
+            /* padding-right: 20px; */
+            
+    
             
           }
+          #bu2{
+            
+            width:150px;
+            height : 200px;
+            float: right;
+        
+          }
+          
 #button2{
-    float: right;
     border: 2px solid black;
     font-size: large;
 }
@@ -45,14 +63,30 @@
 </head>
 <body>
     <p id="para">Can you turn the light on?</p>
-    <div class="box">
-<button id="button1">turn on the light</button>
+     <div class="box"> 
+<!-- <div id="bu1"><button onclick="document.getElementById('bulb').src='img/img2.jpeg'" id="button1">turn on the light</button></div> --> 
+<div id="bu1"><button  id="button1">turn on the light</button></div>
+    <div><img id="bulb" src="img/image.jpeg"></div>
 
-<img id="bulb" src="lightON&OFF/img.png">
-
-<button id="button2">turn off the light</button>
+    <!-- sutton2" onclick="document.getElementById('bulb').src='img/image.jpeg'">turn off the light</button></div> -->
+    <div id="bu2"><button id="button2" >turn off the light</button></div>
 
     </div>
+    <script>
+const b1=document.querySelector('#button1');
+const b2=document.querySelector('#button2');
+
+b1.addEventListener('click',()=>{
+    document.getElementById('bulb').src='img/img2.jpeg';
+})
+
+    b2.addEventListener('click',()=>{
+        document.getElementById('bulb').src='img/image.jpeg';
+    })
+
+
+    </script>
+
 
 </body>
 </html>
