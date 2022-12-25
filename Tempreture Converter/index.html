@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempconvetor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="tempcalc" onsubmit="calculateTemp();return false">
+ <!-- as when click on submit icon then form get submit so to resolve this problem we have to use return false.  -->
+<label for="" id="label">Enter The Temp Value to convert</label>
+    </br><input type="number" name="temp_value" id="temp_value"> 
+
+<select name="different_temp" id="different_temp">
+    <option value="cel"> °C</option>
+    <option value="f">°F</option>
+</select> </br>  
+<input type="submit" name="temp" id="submit"></br>
+<span id="resultContainer"></span>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
