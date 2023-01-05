@@ -118,7 +118,7 @@
                               /* Increment or Decrement operator*/
 
 //operator: x++ or ++x or x-- or--x;
-//If used postfix,with operator after operands (for example,x++ ) ;the increments operator increments and returns the value before increments.
+//If used postfix,with operator after operands (for example,x++ ); the increments operator increments and returns the value before increments.
 //jo original value hai wh increments ho gai hai lakin usese pahle original value ko store ker lia gya hai 
 //  var num =15;
 //  var Newnum=num++ +5;
@@ -298,7 +298,7 @@
 //         console.log(num);
 // }
 
-                                                                           /**6.CHELLANGE */
+                                                                          /**6.CHELLANGE */
 //q. javaScript program to print table for given number (8,9,12,15)using for loop?
 // for(var i=1;i<=10;i++){
 //         var tableof=8;
@@ -309,7 +309,7 @@
                                             /*** SECTION 5 */
 
 
-                                                                    /**FUNCTION */
+                                                                      /**FUNCTION */
  //A block of code to perform a perticular task
 //  syntex: function functionName(){
 // statement
@@ -376,11 +376,11 @@
                  
 //**************************** **************************************************************************
 
-                                                             /**WELCOME TO ECMAScript*/
+                                                              /**WELCOME TO ECMAScript*/
 
                                                   //Features of ECAMAScript 2015 also known as ES6  
 
-                                                         /**1 LET VS CONST VS VAR**/
+                                                           /**1 LET VS CONST VS VAR**/
 
 //var- Function scope
 //let and condst -Block scope               
@@ -612,10 +612,10 @@
                                                                          /**push() */
 //Array.prototype.push()
 //the push method add one or more elements to the ended of array and return new length of array.
-// const animals=["pig","goats","sheep"];
+// const animels=["pig","goats","sheep"];
 //  const count=  animels.push("chicken");
-  //console.log(animels);
-//console.log(count);
+//   console.log(animels);
+// console.log(count);
 // animels.push("chicken","cow","cat");
 // console.log(animels);
     
@@ -1425,7 +1425,7 @@
 // setTimeout(function,milliseconds)
 //Executes a function, after waiting a specified number of milliseconds.
 
-// setInterval(functio, milliseconds)
+// setInterval(function, milliseconds)
 //same as setTimeout(),but repeat the execution of thefunction continously.
 
 //1> setTimeout()
@@ -1563,7 +1563,7 @@
 //let myFName = myBioData[0];
 //let myLName = myBioData[1];
 //let myAge = myBioData[2];
-//console.loog(myAge);
+//console.log(myAge);
 
 
 
@@ -1602,8 +1602,8 @@
       // let myName="Ankit";
       // const myBio={
       // [myName]: "hello how are you?",
-      // // 26: "is my age"
-      // [20+6]:"is my age"
+      //  26: "is my age"
+      // // [20+6]:"is my age"
 
       
 
@@ -1635,7 +1635,7 @@
 
 
 
-                   /**ES7 features */
+                                    /**ES7 features */
 
 //1: array include
 // const colors=['red','green','blue','white','pink'];
@@ -1662,8 +1662,8 @@
 // let myage="26".padEnd(10);
 // myage (write in console)
 
-
-
+// 
+// 
 //  const person = {name:'ankit',age:87};
 // // console.log(Object.values(person));//if we want print all data in inside object then we will go for loop but we can get by Object.values(object name)
 // console.log(Object.entries(person));//each key and its value save in an array and all array save in a single array.
@@ -1679,7 +1679,8 @@
 // console.log(sPerson);
 
 
-                       /**ES 2019 */
+                                               /**ES 2019 */
+
 // const person = {name:'ankit',age:87};
         
 // const entrie=Object.entries(person);
@@ -1688,7 +1689,7 @@
 // console.log(Object.fromEntries(entrie));//it reverse Object.entries.
 
 
-                    /**ES 2020 */
+                                                /**ES 2020 */
 
 //#1: BigInt
 
@@ -1727,7 +1728,7 @@
 
 
      
-              /**EVENT PROPAGATION AND EVENT BUBBLING AND EVENT CAPTURING*/
+                     /**EVENT PROPAGATION AND EVENT BUBBLING AND EVENT CAPTURING*/
 
 //WHAT IS EVENT PROPAGATION?
 //Ans.>The Event Propagation mode determines in which order the element receive the event.              
@@ -1745,14 +1746,14 @@
 
 
 
-                  /***HIGHER ORDER FUNCTION */
+                       /***HIGHER ORDER FUNCTION */
 
 // // function which takes another function as an argumnent is caled HoF
 
 // //wo function jo dusre function ko as an argument accept krta hai use HOF.
 
 
-                                      /***CALLBACK FUNCTION */
+                                       /***CALLBACK FUNCTION */
 
 //function which get passed as an argument to another function is called CBF.
 // // a callback function is function which passed as argument to another function, to be "called back"at a later time.
@@ -1861,15 +1862,15 @@
 //// 6:Synchronous javascript prog
 
 // const fun2=()=>{
-// //   console.log(`Function 2 is called`);
-// // }
-// //  const fun1=()=>{
-// //   console.log(`Function 1 is called`);
-// //   fun2();
-// //   console.log(`Function 1 is called again`);
-// //  }
+//   console.log(`Function 2 is called`);
+// }
+//  const fun1=()=>{
+//   console.log(`Function 1 is called`);
+//   fun2();
+//   console.log(`Function 1 is called again`);
+//  }
 
-// //  fun1();
+//  fun1();
 
 ////7: Asynchronous javascript 
 
@@ -1979,3 +1980,15 @@
  //PROMISES
  //GET https://icanhazdadjoke.com/ further are in dadjokes project.
 
+
+
+ //if suppose any number having typeof string and if we want to covert it typeof then--->>
+
+ //Using the unary plus operator:
+ //var n=+str;
+
+ //The Number constructor:
+ //var n=Number(str);
+
+ //The parseFloat function:
+ //var n=parsefloat(str);
