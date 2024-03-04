@@ -314,11 +314,11 @@
 //  syntex: function functionName(){
 // statement
 //  }   define a function uske baad calling funtion
-//      function sum(){
-//         var a=10, b=20;
-//         var total=a+b; 
-//      }
-//      console.log(sum());its output is undefined becuase we have tell to function that output will be passed to console.log.
+    //  function sum(){
+    //     var a=10, b=20;
+    //     var total=a+b; 
+    //  }
+     // console.log(sum());//its output is undefined becuase we have tell to function that output will be passed to console.log.
 // function sum(a,b){
 //         
 //         var total=a+b; 
